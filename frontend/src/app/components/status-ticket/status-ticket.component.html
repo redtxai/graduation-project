@@ -1,0 +1,5 @@
+<section class="status-ticket-container">
+  <span class="status open" [class.selected]="statusSelected === statusTicket.Open" (click)="changeStatus(statusTicket.Open)"></span>
+  <span class="status in-progress" [class.selected]="statusSelected === statusTicket.InProgress" (click)="changeStatus(statusTicket.InProgress)"></span>
+  <span class="status done" [class.selected]="statusSelected ===  statusTicket.Done" (click)="changeStatus(statusTicket.Done)"></span>
+</section>

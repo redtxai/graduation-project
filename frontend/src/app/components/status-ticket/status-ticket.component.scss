@@ -1,0 +1,32 @@
+.status-ticket-container {
+  display: flex;
+  padding: 4px;
+
+  .status {
+    display: inline-block;
+    opacity: 0.1;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+
+    &:not(:first-child) {
+      margin-left: 4px;
+    }
+  }
+
+  .open {
+    background-color: orange;
+  }
+
+  .in-progress {
+    background-color: yellow;
+  }
+
+  .done {
+    background-color: green;
+  }
+
+  .selected {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,25 @@
+<section class="single-ticket-container">
+  <div class="single-ticket-card">
+    <header>
+      <label class="id">{{ ticket.id }}</label>
+      <label class="title">{{ ticket.title }}</label>
+      <label class="status"
+        [class.open]="ticket.status === statusTicket.Open"
+        [class.in-progress]="ticket.status === statusTicket.InProgress"
+        [class.done]="ticket.status ===  statusTicket.Done"
+      ></label>
+    </header>
+    <div class="single-ticket-description">
+      <span>Description:</span>
+      <label class="description">
+        {{ ticket.description }}
+      </label>
+    </div>
+    <footer>
+      <div class="priority-container">
+        Priority: <label class="priority">{{ ticket.priority }}</label>
+      </div>
+      <label class="email">{{ ticket.email }}</label>
+    </footer>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+
+.animate {
+  transition: all 0.1s;
+}
+
+.action-button {
+  position: relative;
+  padding: 4px 10px;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.green {
+  background-color: #2ecc71;
+  border-bottom: 5px solid #27ae60;
+  text-shadow: 0px -2px #27ae60;
+}
+
+.red {
+ background-color: #e74c3c;
+ border-bottom: 5px solid #c0392b;
+ text-shadow: 0px -2px #c0392b;
+}
+
+.action-button:active {
+  transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
